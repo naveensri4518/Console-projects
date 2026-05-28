@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Lib"
+    ],
+    "java.project.referencedLibraries": [
+        "Lib\\mysql-connector-j-9.7.0.jar",
+        "c:\\Users\\Naveensri\\OneDrive\\Desktop\\BANK SIMULATION\\lib\\mysql-connector-j-9.7.0.jar"
+    ]
+}

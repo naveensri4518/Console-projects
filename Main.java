@@ -1,9 +1,21 @@
+import Bin.DbConnection;
+import java.sql.*;
+
 public class Main {
     public static void main(String[] args) {
 
         BankController bank = new BankController();
         BankView view = new BankView();
+        Connection con = DbConnection.getConnection();
+        if(con!=null){
+            System.out.println("CONNECTED SUCCEFULLY");
+        }
+        else{
+            System.out.println("FAILED TO CONNECT ");
+        }
+
         while (true) {
+
             view.showMenu();
             int choice = view.getChoice();
 
