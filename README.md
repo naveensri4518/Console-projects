@@ -105,3 +105,7 @@ The main objective of this project is to develop a banking application using Jav
 # 👨‍💻 Author
 
   "NAVEENSRI V "
+<<<<<<< HEAD
+=======
+
+>>>>>>> b2d8c002c7f27ac9a72a4db115aa334ace01f259
