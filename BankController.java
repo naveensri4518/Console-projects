@@ -14,7 +14,7 @@ public class BankController {
     public void createAccount( int accNo,  String name, double balance) {
             try {
 
-      accounts[count] = new Account( accNo, name, balance);
+            accounts[count] = new Account( accNo, name, balance);
 
             count++;
 
@@ -73,18 +73,18 @@ public class BankController {
 
     public void deposit(int accNo, double amount) {
          
-          try{
-         Connection con = DbConnection.getConnection();
-         PreparedStatement ps = con.prepareStatement("update accounts set balance = balance + ? where accountnum = ?");
-         ps.setDouble(1, amount);
-         ps.setInt(2,accNo);
-         int rows = ps.executeUpdate();
+        try{
+            Connection con = DbConnection.getConnection();
+            PreparedStatement ps = con.prepareStatement("update accounts set balance = balance + ? where accountnum = ?");
+            ps.setDouble(1, amount);
+            ps.setInt(2,accNo);
+            int rows = ps.executeUpdate();
 
-        if (rows>0) {
-            view.displayMessage("Amount Deposited");
-         } else {
-            view.displayMessage("Account Not Found");
-        }
+            if (rows>0) {
+                view.displayMessage("Amount Deposited");
+            } else {
+                view.displayMessage("Account Not Found");
+            }
     }
         catch(Exception e){
             System.out.println(e);

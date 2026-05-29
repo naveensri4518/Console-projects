@@ -43,12 +43,16 @@ public class Main {
                     int checkAcc = view.getAccountNumber();
                     bank.checkBalance(checkAcc);
                     break;
-
                 case 5:
-                    bank.displayAccounts();
+                    int searchacc = view.getAccountNumber();
+                    bank.searchAccount(searchacc);
                     break;
 
                 case 6:
+                    bank.displayAccounts();
+                    break;
+
+                case 7:
                     view.displayMessage("Thank You");
                     System.exit(0);
 
