@@ -12,6 +12,7 @@ This is a console-based Bank Management System developed using Java, JDBC, and M
 * Search Account
 * Check Balance
 * Display All Accounts
+* Delete account
 * MySQL Database Connectivity
 * JDBC Integration
 * MVC Architecture
@@ -84,6 +85,7 @@ jdbc:mysql://localhost:3306/bankdb
 * INSERT
 * SELECT
 * UPDATE
+* DELETE
 
 
 # 🔥 Main Objective
