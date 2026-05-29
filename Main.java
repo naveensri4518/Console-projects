@@ -51,8 +51,12 @@ public class Main {
                 case 6:
                     bank.displayAccounts();
                     break;
-
                 case 7:
+                    int deleteAcc = view.getAccountNumber();
+                    bank.deleteAccount(deleteAcc);
+                     break;
+
+                case 8:
                     view.displayMessage("Thank You");
                     System.exit(0);
 

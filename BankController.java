@@ -142,6 +142,41 @@ public class BankController {
         System.out.println(e);
     }
     }
+    public void deleteAccount(int accNo) {
+
+    try {
+
+        Connection con =
+                DbConnection.getConnection();
+
+        PreparedStatement ps =
+                con.prepareStatement(
+                        "delete from accounts where accountnum=?"
+                );
+
+        ps.setInt(1, accNo);
+
+        int rows =
+                ps.executeUpdate();
+
+        if(rows > 0) {
+
+            view.displayMessage(
+                    "Account Deleted Successfully"
+            );
+
+        } else {
+
+            view.displayMessage(
+                    "Account Not Found"
+            );
+        }
+
+    } catch(Exception e) {
+
+        System.out.println(e);
+    }
+}
 
     public void displayAccounts() {
         try {

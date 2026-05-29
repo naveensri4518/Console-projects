@@ -12,7 +12,8 @@ public class BankView {
         System.out.println("4. Check Balance");
         System.out.println("5. Search aaccount");
         System.out.println("6. Display All Accounts");
-        System.out.println("7. Exit");
+        System.out.println("7. Delete Account");
+        System.out.println("8. Exit");
     }
 
     public int getChoice() {
